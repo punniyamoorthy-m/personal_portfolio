@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punniya Moorthy - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">PM</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon" id="themeIcon"></i>
+                </button>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <div class="home-background">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="home-container">
+            <div class="home-content">
+                <div class="text-content">
+                    <div class="greeting">Hello, I'm</div>
+                    <h1 class="name-animation">PunniyaMoorthy</h1>
+                    <div class="profession-wrapper">
+                        <span class="profession-text">I'm a </span>
+                        <span class="profession-animation" id="professionText"></span>
+                    </div>
+                    <p class="home-description">
+                        Passionate about creating beautiful, functional, and user-friendly web experiences.
+                    </p>
+                    <div class="home-buttons">
+                        <a href="assets/resume.pdf" 
+                            download="PunniyaMoorthy_Resume.pdf" 
+                            class="download-btn" 
+                            id="downloadBtn">
+                            <i class="fas fa-download"></i> Download Resume
+                            </a>
+
+                        <a href="#contact" class="contact-btn">
+                            <i class="fas fa-envelope"></i> Get In Touch
+                        </a>
+                    </div>
+                    <div class="social-icons-home">
+                        <a href="https://www.linkedin.com/in/punniyamoorthym/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/punniyamoorthy-m" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="image-content">
+                    <div class="image-wrapper">
+                        <div class="image-border"></div>
+                        <img src="assets/profile.jpg" alt="Punniya Moorthy" class="profile-image">
+                        <div class="floating-elements">
+                            <div class="float-icon float-icon-1"><i class="fab fa-react"></i></div>
+                            <div class="float-icon float-icon-2"><i class="fab fa-js"></i></div>
+                            <div class="float-icon float-icon-3"><i class="fab fa-python"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p class="about-text">
+                    I'm <strong>Punniya Moorthy M</strong>, an aspiring Full Stack Web Developer with a strong passion for building responsive and user-centric web applications. I specialize in HTML, CSS, JavaScript, and MySQL, and have hands-on experience in developing interactive projects.
+                </p>
+                <p class="about-text">
+                    I enjoy turning ideas into functional, efficient digital solutions with clean code and intuitive design.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-buttons">
+                <button class="skill-btn active" data-category="languages">Languages</button>
+                <button class="skill-btn" data-category="frameworks">Frameworks</button>
+                <button class="skill-btn" data-category="tools">Tools</button>
+            </div>
+            <div class="skills-display">
+                <div class="skill-category active" id="languages">
+                    <div class="skill-item">Python</div>
+                    <div class="skill-item">JavaScript</div>
+                    <div class="skill-item">SQL</div>
+                </div>
+                <div class="skill-category" id="frameworks">
+                    <div class="skill-item">Tailwind CSS</div>
+                    <div class="skill-item">Bootstrap</div>
+                    <div class="skill-item">React.js</div>
+                    <div class="skill-item">Pandas</div>
+                    <div class="skill-item">NumPy</div>
+                    <div class="skill-item">Matplotlib</div>
+                    <div class="skill-item">Seaborn</div>
+                </div>
+                <div class="skill-category" id="tools">
+                    <div class="skill-item">Git & GitHub</div>
+                    <div class="skill-item">Figma</div>
+                    <div class="skill-item">MySQL</div>
+                    <div class="skill-item">Power BI</div>
+                    <div class="skill-item">VS Code</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <!-- <div class="timeline-date">2024</div> -->
+                        <h3>E-commerce Website</h3>
+                        <p>Full-featured online shopping platform with cart and payment integration. Built with modern web technologies for seamless user experience.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <!-- <div class="timeline-date">2024</div> -->
+                        <h3>Personal Portfolio</h3>
+                        <p>Responsive portfolio website showcasing skills and projects. Features modern design with smooth animations and dark mode support.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <!-- <div class="timeline-date">2023</div> -->
+                        <h3>E-learning Platform</h3>
+                        <p>Interactive learning management system with course management, progress tracking, and user authentication features.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Tailwind CSS</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <!-- <div class="timeline-date">2023</div> -->
+                        <h3>Food Delivery Website</h3>
+                        <p>Food ordering platform with real-time tracking and delivery system. Includes restaurant management and order processing features.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Flask</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="send-btn">
+                    <i class="fas fa-paper-plane"></i> Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Punniya Moorthy. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/punniyamoorthym/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/punniyamoorthy-m" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
