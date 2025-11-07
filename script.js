@@ -158,7 +158,7 @@ const downloadBtn = document.getElementById('downloadBtn');
 
 // Typing Animation for Profession
 const professionText = document.getElementById('professionText');
-const professions = ['Frontend Developer', 'Software Developer', 'Web Developer', 'Full Stack Developer'];
+const professions = ['Frontend Developer', 'Software Developer', 'Web Developer'];
 let currentProfessionIndex = 0;
 let currentCharIndex = 0;
 let isDeleting = false;
